@@ -2,7 +2,7 @@
 
 let txtAjout = document.querySelector("#txtAjout");
 let btnAjout = document.querySelector("#btnAjout");
-let btnModif = document.querySelector("#btnModif");
+
 let colGau = document.querySelector(".col-gau");
 let colDroi = document.querySelector(".col-droi");
 let suppDiv = document.querySelector("#supprimeP");
@@ -32,12 +32,6 @@ btnAjout.addEventListener("click", function () {
 
   countTodo++;
 
-  //bouton valider
-  // btnValide.addEventListener('click',function(){
-  //     colGau.removeChild(nvlTache)
-  //     colDroi.appendChild(nvlTache)
-
-  // })
 
   txtAjout.value = "";
 });
@@ -52,22 +46,61 @@ function deleteTodo(todo) {
   todo.remove();
 }
 
-function updateTask() {
-  let newTask = prompt("entrez la modification souhaitée");
-  para.textContent = newTask;
+// function editTodo(todo) {
+//   console.log(todo);
+
+//   let newTask = prompt("entrez la modification souhaitée");
+
+//   todo.childNodes[0].textContent = newTask;
+// }
+
+const editTodo = (todo) => {
+
+  const myModal = `
+    <div id="block-modif">
+      <input type="text" class="change-txt">
+      <div class="boutons-modif">
+          <button class="modif-valid">Valider</button>
+          <button class="cancel-valid">Annuler</button>
+      </div>
+    </div>
+ `;
+ document.querySelector('#modal').innerHTML = myModal
+
+
+
+
+ // appeler mes variables (boutons)
+let validNewTask= document.querySelector ('.modif-valid')
+let cancelNewTask= document.querySelector ('.cancel-valid')
+
+let btnModif = document.querySelector("#btnModif");
+
+
+
+// validNewTask.onclick = (e) => {
+ 
+// }
+
+// assigner mes cliques
+
+validNewTask.addEventListener ('click', function(){
+  let textNewTask = document.querySelector ('.change-txt')
+  let newTask = textNewTask.value;
+
+
+    todo.childNodes[0].textContent = newTask;
+    console.log(newTask);
+    console.log(textNewTask);
+    console.log(todo);
+    document.querySelector('#modal').style.display = 'none';
+    // myModal.classList.add('disparaitre')
+
+
+})
+
+cancelNewTask.onclick = (e) => {
+ document.querySelector('#modal').style.display = 'none';
+}
 }
 
-function editTodo(todo) {
-  console.log(todo);
-
-  let newTask = prompt("entrez la modification souhaitée");
-
-  todo.childNodes[0].textContent = newTask;
-}
-
-// btnModif.addEventListener("click", function (){
-
-//   let newTask= prompt('entrez la modification souhaitée')
-//   para.textContent = newTask
-
-// })

@@ -129,6 +129,7 @@ nav ul{
     height: 80%;
     width: 50%;
     border-right: 2px solid rgb(254, 180, 180);
+    overflow-y: scroll;
     
 }
 
@@ -136,6 +137,8 @@ nav ul{
     height: 80%;
     width: 50%;
     border-left: 2px solid rgb(254, 180, 180);
+    overflow-y: scroll;
+    
     
 }
 
@@ -165,12 +168,17 @@ nav ul{
         text-align: center;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        margin-left: 1000px;
+        margin-top: 200px;
+        border-radius: 50%;
     }
 
     .change-txt{
         border-color: pink;
         width: 80%;
         height: 2em;
+        margin-top: 10px;
     }
 
     .boutons-modif{
@@ -185,6 +193,9 @@ nav ul{
         color: white;
         height: 30px;
         width: 50px;
+        border-radius: 20%;
+       border: 2px solid pink;
+
     }
 
     .cancel-valid{
@@ -192,6 +203,13 @@ nav ul{
         color: white;
         height: 30px;
         width: 50px;
+        border-radius: 20%;
+        border: 2px solid pink;
+
+    }
+
+    .disparaitre{
+        display: none;
     }
 
 
