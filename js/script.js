@@ -57,13 +57,13 @@ function deleteTodo(todo) {
 const editTodo = (todo) => {
 
   const myModal = `
-    <div id="block-modif">
+    <form id="block-modif">
       <input type="text" class="change-txt">
       <div class="boutons-modif">
           <button class="modif-valid">Valider</button>
           <button class="cancel-valid">Annuler</button>
       </div>
-    </div>
+    </form>
  `;
  document.querySelector('#modal').innerHTML = myModal
 
@@ -96,11 +96,18 @@ validNewTask.addEventListener ('click', function(){
     document.querySelector('#modal').style.display = 'none';
     // myModal.classList.add('disparaitre')
 
-
+    
 })
 
+
 cancelNewTask.onclick = (e) => {
+  e.preventDefault();
  document.querySelector('#modal').style.display = 'none';
+ 
 }
+
+
+
+
 }
 

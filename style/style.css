@@ -159,8 +159,8 @@ nav ul{
     /**modif_pop*/
 
     #block-modif{
-        height: 150px;
-        width: 200px;
+        height: 200px;
+        width: 400px;
         border: 2px solid pink;
         background-color: white;
         display: flex;
@@ -169,9 +169,13 @@ nav ul{
         align-items: center;
         justify-content: center;
         position: absolute;
-        margin-left: 1000px;
-        margin-top: 200px;
+      
         border-radius: 50%;
+        margin-left: 50%;
+        margin-right: 50%;
+       
+
+        
     }
 
     .change-txt{
@@ -244,7 +248,7 @@ nav ul{
     
     .barre-gauche{
         
-        width: 80vw;
+        width: 70vw;
         height: 15vh;
         float: none;
         background-color: rgba(255, 226, 191, 0.641);
@@ -274,7 +278,7 @@ nav ul{
     /* colonne droite devient bas */
 
     .barre-droite{
-        width:80vw;
+        width:90vw;
         float: none;
         margin-right: 0;
         border-radius: 10%;
@@ -307,13 +311,14 @@ nav ul{
    .col-gau{
     width: 50%;
     border-right: 1px solid rgb(254, 180, 180);
-    height:500px;
+    height:450px;
     
    }
 
    .col-droi{
     width: 50%;
     border-left: 1px solid rgb(254, 180, 180);
+    height:450px;
    }
 
     .col-mil{
@@ -339,4 +344,253 @@ nav ul{
         width: auto;
         
     }
+
+/**edit*/
+    /**modif_pop*/
+
+    #block-modif{
+        height: 150px;
+        width: 200px;
+        border: 2px solid pink;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 30%;
+            left:-18%;
+        border-radius: 50%;
+        
+    }
+
+    .change-txt{
+        border-color: pink;
+        width: 80%;
+        height: 2em;
+        margin-top: 10px;
+    }
+
+    .boutons-modif{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        gap: 20px;
+    }
+
+    .modif-valid{
+        background-color: rgb(94, 170, 94);
+        color: white;
+        height: 30px;
+        width: 50px;
+        border-radius: 20%;
+       border: 2px solid pink;
+
+    }
+
+    .cancel-valid{
+        background-color: rgb(160, 66, 66);
+        color: white;
+        height: 30px;
+        width: 50px;
+        border-radius: 20%;
+        border: 2px solid pink;
+
+    }
+
+    .disparaitre{
+        display: none;
+    }
+
+
+
+}
+
+@media only screen and (min-width : 721px) and (max-width : 920px)  {
+    
+    
+    
+    
+        .logo{
+            height: 150px;
+            width: auto;
+        }
+    
+        .Titre{
+            font-family: 'Leckerli One', cursive;
+            font-size: 35px;
+            margin-right: 0;
+            margin-top:50px;
+            margin-left: 0;
+        }
+    
+        /* colonne gauche devient haut */
+        .gau-droi{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .barre-gauche{
+            
+            width: 90vw;
+            height: 15vh;
+            float: none;
+            background-color: rgba(255, 226, 191, 0.641);
+            border-radius: 30%;
+            margin-bottom: 20px;
+            margin-left: 0;
+           
+        }
+    
+        
+        nav ul{
+            display: flex;
+            flex-direction:row;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 100%;
+            
+        }
+    
+        .lien-liste{
+            font-size: 25px;
+        }
+    
+    
+    
+    
+    
+    
+        /* colonne droite devient bas */
+    
+        .barre-droite{
+            width:90vw;
+            float: none;
+            margin-right: 0;
+            border-radius: 10%;
+            background-color: rgba(250, 210, 210, 0.678);
+            height: 75vh;
+        }
+    
+    
+        .ajout{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:0;
+            height: 25%;
+            align-items: center;
+        }
+    
+        .ajout a img {
+            margin-top: 0;
+        }
+    
+        .colonnes{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+        }
+    
+       .col-gau{
+        width: 50%;
+        border-right: 1px solid rgb(254, 180, 180);
+        height:500px;
+        
+       }
+    
+       .col-droi{
+        width: 50%;
+        border-left: 1px solid rgb(254, 180, 180);
+        height:500px;
+       }
+    
+        .col-mil{
+            display: none;
+        }
+    
+        .action{
+            display: flex;
+            justify-content: flex-end;
+            width:100%;
+            gap: 10px;
+        }
+    
+        .exemple1{
+            flex-direction: column;
+            gap: 0;
+        }
+    
+        
+    
+        .action a img{
+            height: 25px;
+            width: auto;
+            
+        }
+    
+    /**edit*/
+        /**modif_pop*/
+    
+        #block-modif{
+            height: 150px;
+            width: 200px;
+            border: 2px solid pink;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 30%;
+            left:0;
+            
+            border-radius: 50%;
+            
+        }
+    
+        .change-txt{
+            border-color: pink;
+            width: 80%;
+            height: 2em;
+            margin-top: 10px;
+        }
+    
+        .boutons-modif{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+    
+        .modif-valid{
+            background-color: rgb(94, 170, 94);
+            color: white;
+            height: 30px;
+            width: 50px;
+            border-radius: 20%;
+           border: 2px solid pink;
+    
+        }
+    
+        .cancel-valid{
+            background-color: rgb(160, 66, 66);
+            color: white;
+            height: 30px;
+            width: 50px;
+            border-radius: 20%;
+            border: 2px solid pink;
+    
+        }
+    
+        .disparaitre{
+            display: none;
+        }
+
+
 }
