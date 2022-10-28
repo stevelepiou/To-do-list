@@ -8,7 +8,8 @@ let colDroi = document.querySelector(".col-droi");
 let suppDiv = document.querySelector("#supprimeP");
 let countTodo = 1;
 
-btnAjout.addEventListener("click", function () {
+btnAjout.addEventListener("click", function(e) {
+  e.preventDefault();
   console.log("test");
 
   //creation d'une nouvelle tâche avec div complète
@@ -66,7 +67,7 @@ const editTodo = (todo) => {
     </form>
  `;
  document.querySelector('#modal').innerHTML = myModal
-
+ document.querySelector('#modal').style="display:block";
 
 
 
@@ -84,7 +85,8 @@ let btnModif = document.querySelector("#btnModif");
 
 // assigner mes cliques
 
-validNewTask.addEventListener ('click', function(){
+validNewTask.addEventListener ('click', function(e){
+  e.preventDefault(e)
   let textNewTask = document.querySelector ('.change-txt')
   let newTask = textNewTask.value;
 

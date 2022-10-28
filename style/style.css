@@ -101,9 +101,27 @@ nav ul{
     align-items: center;
 }
 
-.ajout p{
+.ajout label{
     font-size: 20px;
     font-weight: 600;
+}
+
+#btnAjout{
+    background-color: rgb(254, 180, 180);
+    height: 40px;
+    width: 65px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#btnAjout:is(:hover, :focus){
+    background-color: rgb(255, 255, 255) ;
+    outline: 3px solid  rgb(254, 180, 180) ;
+    outline-offset: 5px;
+    color :rgb(254, 180, 180);
 }
 
                     /*COLONNES*/
