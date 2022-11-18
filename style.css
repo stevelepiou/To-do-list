@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    flex-direction: column;
+    
+}
+form {
+    display: flex;
+    gap: 20px;
+}
+#btnAjout{
+    background-color: rgb(254, 180, 180);
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+
+#btnAjout:is(:hover, :focus){
+    background-color: rgb(255, 255, 255) ;
+    outline: 3px solid  rgb(254, 180, 180) ;
+    outline-offset: 5px;
+    color :rgb(254, 180, 180);
+}
+
+.affTaches{
+    display: flex;
+    justify-content: space-between;
+    width: 40vw;
+    text-align: center;
+    margin-top: 30px;
+    background-color: rgb(254, 180, 180) ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+.titreTaches{
+    width: 50%;
+   
+    
+}
+.titreModif{
+    width:25%;
+}
+.titreSupp{
+   
+    width:25%;
+   
+}
+
+.ligne{
+    display: flex;
+    width:40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.ligne:nth-child(2n){
+    background-color: #f6f8f8;
+}
+.ligne:nth-child(2n) {
+    border-bottom: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+}
+.tache{
+    width: 50%;
+}
+
+.modif{
+    width: 25%;
+    text-align: center;
+
+}
+
+.supp{
+    width: 25%;
+}
+
+.ligne img{
+    width: 50px;
+}
+
+.txtAjout{
+    background-color: antiquewhite;
+   border: none;
+   border-radius: 10px;
+   width: 20vw;
+}
+
+/*Modifier CSS*/
+
+
+
+.blockModif{
+    background-color: rgb(254, 180, 180) ;
+    width: 30vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.blockModif h2{
+    text-align: center;
+    font-weight: 300;
+    color: rgb(255, 255, 255) ;
+}
+
+.btnBack{
+    text-decoration: none;
+    color: #3dbe77;
+    text-align: center;
+    display: flex;
+    font-size: 25px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 30vw;
+}
+
+.btnBack img{
+    max-width: 20px;
+    height: 20px;
+}
+
+.validModif{
+    background-color:white;
+    height: 40px;
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(254, 180, 180);
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.validModif:is(:hover, :focus){
+    background-color: rgb(254, 180, 180) ;
+    outline: 3px solid  white ;
+    outline-offset: 5px;
+    color :white;
+    cursor: pointer;
+}
+
+.txtModif{
+   background-color: antiquewhite;
+   border: none;
+   border-radius: 10px;
+   width: 20vw;
+}
+
